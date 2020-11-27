@@ -1,0 +1,20 @@
+<div class="information-card">
+    <ng-container *ngTemplateOutlet="cardHeaderTpl || defaultCardHeaderTpl;context: cardHeaderTplContext">
+    </ng-container>
+    <!-- <div class="information-card__header">
+
+    </div>
+
+    <div class="information-card__body">
+
+    </div>
+
+    <div class="information-card__footer">
+
+    </div> -->
+
+</div>
+
+<ng-template #defaultCardHeaderTpl>
+    <app-card-header [title]="title"></app-card-header>
+</ng-template>
